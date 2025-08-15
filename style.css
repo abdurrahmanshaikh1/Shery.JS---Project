@@ -1,0 +1,171 @@
+@font-face {
+    font-family: kajiro;
+    src: url(./Kajiro.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    overflow: hidden;
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.top {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+.workingarea {
+    position: relative;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.nav {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    height: 80px;
+}
+
+.lnav,
+.rnav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav a {
+    pointer-events: all;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 800;
+
+}
+
+.hero {
+    /* margin-top: 50px; */
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.heroleft {
+    min-width: 50%;
+    /* height: 100%; */
+    
+
+}
+
+
+
+.heroleft .elem {
+    height: 9vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+.heroleft .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    line-height: .9;
+    font-family: kajiro;
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw;
+}
+
+.heroleft button {
+    pointer-events: all;
+    padding: .10vw 1.72vw;
+    font-size: 2vw;
+    letter-spacing: 1.3px;
+    margin-top: 2vw;
+    font-family: kajiro;
+}
+
+.heroright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width : 17%;
+    color: white;
+}
+
+.heroright p {
+    /* margin-bottom: 50px; */
+    text-align: right;
+    font-size: 11.5px;
+    font-weight: 300;
+
+}
+
+.heroright .imagediv {
+    width: 100%;
+    height: 140px;
+    background-image: url(https://cdn.pixabay.com/photo/2023/04/17/14/36/ai-generated-7932616_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+.heroright p:nth-child(3){
+    margin-bottom: 30px;
+}
